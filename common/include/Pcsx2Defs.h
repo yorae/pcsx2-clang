@@ -39,7 +39,7 @@ extern "C" unsigned __int64 __xgetbv(int);
 // Notes: I'd have used ARRAY_SIZE instead but ran into cross-platform lib conflicts with
 // that as well.  >_<
 #ifndef ArraySize
-#	define ArraySize(x) (sizeof(x)/sizeof((x)[0]))
+	#define ArraySize(x) (sizeof(x)/sizeof((x)[0]))
 #endif
 
 // --------------------------------------------------------------------------------------
